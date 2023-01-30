@@ -76,7 +76,7 @@ a:hover {
     }
 } */
 
-@media (min-width:250px) { 
+@media (min-width:230px) { 
     .enter-field > label {
         font-style: normal;
         
