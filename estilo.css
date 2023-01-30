@@ -1,24 +1,14 @@
 @charset "UTF-8";
-
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500&family=Poppins&display=swap');
-
-
-/* direitos autorais do bg do login
-    https://www.artstation.com/?sort_by=community&dimension=all
-*/
+   
 
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Inter Tight', sans-serif;
-    font-family: 'Poppins', sans-serif;
 }
 
 body {
     padding: 15px 0px;
-    margin: 12px;
-    display: flex;
-    flex-direction: column;
+    margin: auto;
 }
 
 form {
@@ -26,39 +16,39 @@ form {
     background-size: cover;
     
 
-    padding: 10%;
-    margin: auto;
+    padding: 10px 0px;
+    margin: 22px auto;
     border: transparent;
     border-radius: 12px 3px;
-    max-width: 40%;
+    max-width: 35%;
     text-align: center;
 }
 
 .enter-field > label {
-    font: var();
-    font-style: italic;
-    display: flex;
+    font-style: normal;
+    display: block;
     padding: 10px 0px;
     font-weight: 600;
-    font-size: larger;
+    font-size: large;
     color: white;
     letter-spacing: 5px;
     text-shadow: 0px 0px whitesmoke;
 }
 
 .enter-field > input {
-    display: block;
+    display: inline-block;
     background-color: rgb(222, 235, 235);
     padding: 2px;
     border-radius: 3px;
 }
 
 footer {
+
     background-color: rgb(46, 5, 46);
     padding: 0px 7px;
-    margin: 2px 0px;
-    width: 26vh;
-    text-align: left;
+    margin: 30px  auto;
+    width: 40%;
+    text-align: center;
     color: aliceblue; 
 }
 
@@ -70,5 +60,62 @@ a {
 a:hover {
     color: rgb(169, 245, 219);    
     text-decoration: none;
+}
+
+/* @media (min-width:250px) {
+    body {
+        padding: 15px 0px;
+        margin: auto;
+    }
+}
+
+@media (max-width:1920px) {
+    body {
+        padding: 15px 0px;
+        margin: auto;
+    }
+} */
+
+@media (min-width:250px) { 
+    .enter-field > label {
+        font-style: normal;
+        
+        padding: 12px 0px;
+        
+        
+        color: white;
+        
+        letter-spacing: 1px;
+        text-shadow: 0px 0px whitesmoke;
+    }
+    
+    .enter-field > input {
+        display: inline-block;
+        background-color: rgb(222, 235, 235);
+        padding: 0px;
+        margin: 4px auto;
+        width: 25vw;
+        border-radius: 3px;
+    }
+}
+
+@media (max-width: 1920px) {
+    .enter-field > label {
+        font-style: italic;
+        display: block;
+        padding: 10px 0px;
+        font-weight: 600;
+        font-size: large;
+        color: white;
+        letter-spacing: 5px;
+        text-shadow: 0px 0px whitesmoke;
+    }
+    
+    .enter-field > input {
+        display: inline-block;
+        background-color: rgb(222, 235, 235);
+        padding: 2px;
+        border-radius: 3px;
+    }
     
 }
