@@ -6,27 +6,32 @@
     margin: 0;
 }
 
+html {
+    height: 100%;
+    min-height:  100%;
+}
+
 body {
-    padding: 15px 0px;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height:100%;
 }
 
 form {
     background: url('img/artstation\ -\ explore.jpeg') no-repeat center center;
     background-size: cover;
     
-
-    padding: 10px 0px;
-    margin: 22px auto;
+    display: block;
+    padding: 8px 0px;
+    margin: auto;
     border: transparent;
     border-radius: 12px 3px;
-    max-width: 35%;
     text-align: center;
 }
 
 .enter-field > label {
     font-style: normal;
-    display: block;
+    margin: auto;
     padding: 10px 0px;
     font-weight: 600;
     font-size: large;
@@ -36,18 +41,38 @@ form {
 }
 
 .enter-field > input {
-    display: inline-block;
     background-color: rgb(222, 235, 235);
     padding: 2px;
     border-radius: 3px;
 }
 
-footer {
+.botao {
+    padding-top: 15px;
+    margin: 5% auto;
+}
 
+.botao > input {
+    background-color: rgb(145, 111, 145);
+    padding: 9px 25px;
+    border-radius: 2px solid transparent;
+    /* border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px; */
+    border-bottom-left-radius: 9px;
+    border-top-right-radius: 9px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+
+.botao > input:hover {
+    background-color: rgba(137, 43, 226, 0.801);
+    color: rgba(93, 243, 243, 0.808);
+    transform: translate(-1px, 1px);
+    transition: all 0.2s;
+}
+
+footer {
     background-color: rgb(46, 5, 46);
-    padding: 0px 7px;
-    margin: 30px  auto;
-    width: 40%;
+    margin-top:auto ;
     text-align: center;
     color: aliceblue; 
 }
@@ -62,21 +87,9 @@ a:hover {
     text-decoration: none;
 }
 
-/* @media (min-width:250px) {
-    body {
-        padding: 15px 0px;
-        margin: auto;
-    }
-}
-
-@media (max-width:1920px) {
-    body {
-        padding: 15px 0px;
-        margin: auto;
-    }
-} */
 
 @media (min-width:200px) { 
+
     form {
         background: url('img/artstation\ -\ explore.jpeg') no-repeat center center;
         background-size: cover;
@@ -93,7 +106,7 @@ a:hover {
 
     .enter-field > label {
         font-style: normal;
-        padding: 12px 5px;
+        padding: 12px 0px;
         margin: auto;
         color: white;
         min-width: 35px;
@@ -109,31 +122,69 @@ a:hover {
         border-radius: 3px;
     }
 
+    
     footer {
-        padding: 10px 15px;
+        background-color: rgb(46, 5, 46);
+        padding: 10px;
+        margin-top:auto ;
         text-align: center;
+        color: aliceblue; 
     }
+
+    
 }
 
 
-
 @media (max-width: 1920px) {
-    .enter-field > label {
-        font-style: italic;
+
+    form {
+        background: url('img/artstation\ -\ explore.jpeg') no-repeat center center;
+        background-size: cover;
+        
         display: block;
+        padding: 30px 20px;
+        margin: auto;
+        border: transparent;
+        border-radius: 12px 3px;
+        max-width: 100%;
+        text-align: center;
+    }
+    .enter-field > label {
+        font-style: normal;
+        display: block;
+        margin: 12px 50px;
         padding: 10px 0px;
         font-weight: 600;
-        font-size: large;
+        font-size: 1.5em;
         color: white;
-        letter-spacing: 5px;
+        letter-spacing: 4px;
         text-shadow: 0px 0px whitesmoke;
     }
     
     .enter-field > input {
-        display: inline-block;
         background-color: rgb(222, 235, 235);
-        padding: 2px;
+        display: block;
+        margin: auto;
+        padding: 2px 0px;
+        width: 50%;
         border-radius: 3px;
     }
+
+    footer {
+        background-color: rgb(46, 5, 46);
+        padding: 10px;
+        margin-top:auto ;
+        text-align: center;
+        color: aliceblue; 
+    }
+    
     
 }
+
+/* footer {
+    background-color: rgb(46, 5, 46);
+    padding: 50px 150px;
+    margin: 50%;
+    text-align: center;
+    color: aliceblue; 
+} */
