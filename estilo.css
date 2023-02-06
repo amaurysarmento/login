@@ -162,7 +162,7 @@ a:hover {
     }
     
     .enter-field > input {
-        background-color: rgb(210, 250, 250);
+        background-color: rgba(217, 239, 247, 0.575);
         display: block;
         margin: auto;
         padding: 2px 0px;
