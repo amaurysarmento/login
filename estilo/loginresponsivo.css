@@ -18,7 +18,7 @@ body {
 }
 
 form {
-    background: url('img/artstation\ -\ explore.jpeg') no-repeat center center;
+    background: url('../img/artstationexplore.jpeg') no-repeat center center;
     background-size: cover;
     
     display: block;
@@ -89,7 +89,7 @@ a:hover {
 @media (min-width:200px) { 
     
     form {
-        background: url('img/artstation\ -\ explore.jpeg') no-repeat center center;
+        background: url('../img/artstationexplore.jpeg') no-repeat center center;
         background-size: cover;
         
         display: block;
@@ -133,7 +133,7 @@ a:hover {
 @media (max-width: 1920px) {
 
     form {
-        background: url('img/artstation\ -\ explore.jpeg') no-repeat center center;
+        background: url('../img/artstationexplore.jpeg') no-repeat center center;
         background-size: cover;
         
         display: block;
@@ -173,6 +173,5 @@ a:hover {
         text-align: center;
         color: aliceblue; 
     }
-    
     
 }
